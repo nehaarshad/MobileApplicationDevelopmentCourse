@@ -13,25 +13,35 @@ const LoginView = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      {/* header */}
-      <HeaderImage></HeaderImage>
-      {/* textInput */}
-      <Input
-        title="Email or Phone Number"
-        placeholder=""
+      {/* <ResponsiveText style={styles.title}>Login</ResponsiveText>
+       */}
+      {/* <Input
+        placeholder="Email"
         value={email}
-        onChangeText={(value) => setEmail(value)}
-      />
-
-      <Input
-        title="Password"
-        placeholder="Enter password"
+        onChangeText={setEmail}
+        style={styles.input}
+      /> */}
+      <Text>hello</Text>
+      {/* <Input
+        placeholder="Password"
+        secureTextEntry
         value={password}
-        onChangeText={(value) => setPassword(value)}
-        secureTextEntry={true}
+        onChangeText={setPassword}
+        style={styles.input}
       />
-      <MainButton title="Login" onPress={() => { }} ></MainButton>
-
+      
+      <Button 
+        title="Login" 
+        onPress={() => {}} 
+        style={styles.button}
+      /> */}
+{/*       
+      <ResponsiveText 
+        style={styles.linkText}
+        onPress={() => navigation.navigate('register')}
+      >
+        Don't have an account? Register
+      </ResponsiveText> */}
     </View>
   );
 };
