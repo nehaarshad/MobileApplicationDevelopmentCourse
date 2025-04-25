@@ -14,24 +14,24 @@ const LoginView = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* header */}
-     <HeaderImage></HeaderImage>
+      <HeaderImage></HeaderImage>
       {/* textInput */}
-      <Input 
-        title="Email or Phone Number" 
+      <Input
+        title="Email or Phone Number"
         placeholder=""
-        value={email} 
+        value={email}
         onChangeText={(value) => setEmail(value)}
       />
-      
-      <Input 
-        title="Password" 
+
+      <Input
+        title="Password"
         placeholder="Enter password"
-        value={password} 
+        value={password}
         onChangeText={(value) => setPassword(value)}
         secureTextEntry={true}
-      /> 
-      <MainButton title="Login" onPress={()=>{}} ></MainButton>
-      
+      />
+      <MainButton title="Login" onPress={() => { }} ></MainButton>
+
     </View>
   );
 };
@@ -47,9 +47,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: spacingY._5,
     color: appColors.black,
-    textAlign:'left',
+    textAlign: 'left',
   },
- 
+
 });
 
 export default LoginView;
