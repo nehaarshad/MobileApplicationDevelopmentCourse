@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import SplashView from '../views/splashView';
 import LoginView from '../views/auth/loginView';
 import RegisterView from '../views/auth/registerView';
-import HomeScreen from '../views/home';
+import HomeView from '../views/home';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,8 +13,8 @@ export default function AppNavigator() {
       <Stack.Navigator initialRouteName="splash" screenOptions={{ headerShown: false }}>
         <Stack.Screen name="splash" component={SplashView} />
         <Stack.Screen name="login" component={LoginView} />
-        {/* <Stack.Screen name="register" component={RegisterView} />
-        <Stack.Screen name="home" component={HomeScreen} /> */}
+        <Stack.Screen name="register" component={RegisterView} />
+        <Stack.Screen name="home" component={HomeView} />
       </Stack.Navigator>
     </NavigationContainer>
   );

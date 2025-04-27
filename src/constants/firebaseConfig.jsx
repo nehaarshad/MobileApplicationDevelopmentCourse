@@ -17,5 +17,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const firebaseApp = initializeApp(firebaseConfig);
-export const firebaseAuth = initializeApp(firebaseApp);
-export const firebaseDB = initializeApp(firebaseApp);
+export const firebaseAuth = getAuth(firebaseApp);
+export const firebaseDB = getFirestore(firebaseApp);
