@@ -1,4 +1,4 @@
-import {firebaseAuth} from '../constants/firebaseConfig'
+import {firebaseAuth} from '../../firebaseConfig'
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
